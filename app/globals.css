@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #ef4444;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-800 shadow-sm transition hover:bg-gray-50 active:scale-[0.99];
+}
+
+.btn-primary {
+  @apply border-transparent bg-[var(--brand)] text-white hover:bg-red-500;
+}
+
+.input {
+  @apply w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm outline-none transition placeholder:text-gray-400 focus:border-[var(--brand)];
+}
+
+.label {
+  @apply mb-1 block text-xs font-medium text-gray-600;
+}
